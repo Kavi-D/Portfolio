@@ -1,5 +1,5 @@
 import { Box, Container, Heading } from '@chakra-ui/react'
-
+import Navbar from '../components/layouts/Navbar';
 const Page = () => {
   return (
     
@@ -15,7 +15,7 @@ const Page = () => {
           </Heading>
         </Box>
         <p>
-           Developer/ Data Nerd / Social Drinker
+           Developer/Software Engineer/Data Nerd
         </p>
       </Box>
 
