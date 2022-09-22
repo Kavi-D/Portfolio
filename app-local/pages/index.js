@@ -4,7 +4,7 @@ const Page = () => {
   return (
     
     <Container>
-      <Box borderRadius = 'lg' bg = 'green' p = {3} mb = {6} align = "center">
+      <Box borderRadius = 'lg' bg = 'red' p = {3} mb = {6} align = "center">
          I am a Software Developer based in Canada.
       </Box>
 
