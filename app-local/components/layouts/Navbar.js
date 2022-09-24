@@ -13,14 +13,18 @@ import {
     Button,
     useColorMode,
     useColorModeValue,
-    IconButton
+    IconButton,
+    HStack
 } from '@chakra-ui/react'
 import Logo from '../Logo';
+
 
 
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
+import  Githublogo  from '../Githublogo'
+import react from 'react';
 
 const Navbar  = () => { 
     return (
@@ -32,6 +36,14 @@ const Navbar  = () => {
               <Logo/>
             </Heading>
           </Flex>
+          
+          <HStack spacing = "40px" direction={'column'}>
+            <Flex spacing = "20px">
+                <Button variant = 'ghost' ml = {3} display={{ base: 'none', md: 'flex' }}>Projects/Works</Button>
+                <Button variant = 'ghost' ml = {4} display={{ base: 'none', md: 'flex' }}>About Me</Button>
+            </Flex>
+                <Githublogo/>
+          </HStack>
           <Box flex={1} align="right">
             <ThemeToggleButton />
 
