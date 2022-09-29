@@ -6,7 +6,7 @@ import Navbar from './Navbar'
 const Main = ({children, router }) => {
     return (
         <Box as="main" pb = {8}>
-            <Navbar/>
+            <Navbar path = {router.asPath}/>
             <Head>
                 <meta name = "viewport" content="width = device-width, initial-scale =1"/>
                 <title> Kavi D - Homepage</title>

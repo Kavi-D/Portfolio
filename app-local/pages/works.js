@@ -5,3 +5,5 @@ const Works = () => {
         <div>this is works page</div>
     )
 }
+
+export default Works;
