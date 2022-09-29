@@ -63,13 +63,13 @@ const Navbar  = (props) => {
           
           <HStack spacing = "40px" direction={'column'}>
             <Flex spacing = "20px">
+                <LinkLayout href="/" path = {path}>
+                About Me
+                </LinkLayout>
                 <LinkLayout href="/works" path = {path}>
                   Projects/Works
                 </LinkLayout>
 
-                <LinkLayout href="/" path = {path}>
-                About Me
-                </LinkLayout>
             </Flex>
                 <Githublogo/>
           </HStack>
