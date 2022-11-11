@@ -1,4 +1,4 @@
-import { extendTheme } from '@chakra-ui/react'
+import { border, extendTheme } from '@chakra-ui/react'
 import { mode } from '@chakra-ui/theme-tools'
 
 const styles = {
@@ -14,12 +14,13 @@ const components = {
     variants: {
       'section-title': {
         textDecoration: 'underline',
-        fontSize: 20,
-        textUnderlineOffset: 6,
+        fontSize: 25,
+        textUnderlineOffset: 5,
         textDecorationColor: '#525252',
-        textDecorationThickness: 4,
+        textDecorationThickness: 3,
         marginTop: 3,
-        marginBottom: 4
+        marginBottom: 4,
+
       }
     }
   },
