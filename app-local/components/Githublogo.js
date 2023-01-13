@@ -5,11 +5,11 @@ import { AiFillGithub }from 'react-icons/ai';
 
 const LogoBox = styled.span`
   font-weight: bold;
-  font-size: 28px;
+  font-size: 18px;
   display: inline-flex;
   align-items: center;
   height: 30px;
-  line-height: 20px;
+  line-height: 0px;
   padding: 10px;
   > svg {
     transition: 200ms ease;
@@ -24,7 +24,8 @@ const Githublogo = () => {
     <Link href="https://github.com/Kavi-D" scroll={false}>
       <a target = "_blank">
         <LogoBox>
-          <AiFillGithub width={10}/>
+          <AiFillGithub width={10}/> 
+          <div > source code</div> 
         </LogoBox>
       </a>
     </Link>

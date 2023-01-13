@@ -1,7 +1,11 @@
-import { Box, Container, Heading, Button, Center} from '@chakra-ui/react'
+import { Box, Container, Heading, Button, Center, List, ListItem} from '@chakra-ui/react'
 import Title from '../components/title';
 import Paragraph from '../components/Paragraph';
 import BulletPoint from '../components/Bulletpoint';
+import Link from 'next/link';
+import IconPlus from '../components/IconPlus';
+import { AiTwotoneMail } from "react-icons/ai"
+
 const Page = () => {
   
   return (
@@ -35,7 +39,7 @@ const Page = () => {
         </Box>
         <Center paddingTop = "15px">
           <Box alignItems="baseline">
-            <Button colorScheme = "messenger" variant='outline'>My works/Projects</Button>
+            <Button colorScheme = "messenger" variant='outline' ><Link href='/works'>My works/Projects</Link></Button>
           </Box>
         </Center>
 
@@ -48,12 +52,39 @@ const Page = () => {
 
           <BulletPoint date="2020" > Graduated from Carleton University with a Bachilors in Biomedical & Electrical Eng. </BulletPoint>
           <BulletPoint date="2022" > Graduated from University of Waterloo with a Masters in Computer engineering </BulletPoint>
-          <BulletPoint date="Current" > Seeking New opportunities as a Junior Dev/Engineer </BulletPoint>
+          <BulletPoint date="Current" > Seeking New opportunities as a Software Engineer/Dev </BulletPoint>
 
 
 
         </Box>
+        <Box paddingTop="10px" flexGrow={1}>
+          <Title> Contact information </Title>
 
+          <List spacing = {3}>
+            <ListItem>
+              <Button colorScheme = "messenger" variant='ghost' leftIcon={<AiTwotoneMail/>}>
+                <div> Email : kavidharmarajan3@gmail.com</div>
+              </Button>
+            </ListItem> 
+
+            <ListItem>
+
+              <Button colorScheme = "messenger" variant='ghost' leftIcon={<AiTwotoneMail/>}>
+                  <div> LinkedIn : https://www.linkedin.com/in/kavichandiran-dharmarajan-a1ab48203/</div>
+              </Button>
+            </ListItem>
+
+            <ListItem>
+              <Button colorScheme = "messenger" variant='ghost' leftIcon={<AiTwotoneMail/>}>
+                  <div> Phone Number : 613-501-5891</div>
+              </Button>
+              
+            </ListItem>
+
+          </List>
+
+
+        </Box>
 
     </Container>
   )

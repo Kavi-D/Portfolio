@@ -2,7 +2,7 @@
 
 const Works = () => {
     return(
-        <div>this is works page</div>
+        <div>this is works page needs more work, obviously</div>
     )
 }
 
