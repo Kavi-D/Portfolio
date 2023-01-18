@@ -1,4 +1,4 @@
-import { Box, Container, Heading, Button, Center, List, ListItem} from '@chakra-ui/react'
+import { Box, Container, Heading, Button, Center, List, ListItem, AvatarBadge} from '@chakra-ui/react'
 import Title from '../components/title';
 import Paragraph from '../components/Paragraph';
 import BulletPoint from '../components/Bulletpoint';
@@ -10,7 +10,7 @@ const Page = () => {
   
   return (
     
-    <Container>
+    <Container maxW = "contianer.sm">
       <Box display={ {md:'flex'}}>
         <Box flexGrow = {1}>
           <Heading as = "h2" variant = "page-title" paddingTop="20px">
@@ -68,18 +68,14 @@ const Page = () => {
             </ListItem> 
 
             <ListItem>
-
-              <Button colorScheme = "messenger" variant='ghost' leftIcon={<AiTwotoneMail/>}>
-                  <div> LinkedIn : https://www.linkedin.com/in/kavichandiran-dharmarajan-a1ab48203/</div>
-              </Button>
+                <Link href="https://www.linkedin.com/in/kavichandiran-dharmarajan-a1ab48203/">
+                  <Button colorScheme = "messenger" variant='ghost' leftIcon={<AiTwotoneMail/>}>
+                      <div> LinkedIn : https://www.linkedin.com/in/kavichandiran-dharmarajan-a1ab48203/</div>
+                  </Button>
+                </Link>
             </ListItem>
 
-            <ListItem>
-              <Button colorScheme = "messenger" variant='ghost' leftIcon={<AiTwotoneMail/>}>
-                  <div> Phone Number : 613-501-5891</div>
-              </Button>
-              
-            </ListItem>
+           
 
           </List>
 
