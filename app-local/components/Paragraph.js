@@ -8,7 +8,7 @@ const Paragraph  = ({children}) =>{
 
     return(
         <>
-        <Box flexGrow={1}> 
+        <Box flexGrow={1} paddingTop = "15px"> 
           <Text fontSize="md"> {children}</Text>
         </Box>
         </>

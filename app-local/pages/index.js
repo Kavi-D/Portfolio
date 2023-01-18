@@ -32,10 +32,14 @@ const Page = () => {
             and overall loves to engineer or reverse engineer applications suited to help the current enconomy grow in a positive light.
           </Paragraph>
           <Paragraph>  I have worked on several projects in my past that range between, high level machine learning, database design and optimization ,to web development
-            such as this portfolio website. I am open to leanring and discovering new things, since my goal is to provide some level of engineering that
+            such as this portfolio website. I am open to learning and discovering new things, since my goal is to provide some level of engineering that
             can help the world in one way or another 🙃.
+
           </Paragraph>
-          
+
+          <Paragraph >
+            Please click the link below (or above) if you would like to browse any of my works/projects
+          </Paragraph>
         </Box>
         <Center paddingTop = "15px">
           <Box alignItems="baseline">
