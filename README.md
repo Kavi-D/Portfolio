@@ -1,4 +1,4 @@
-# Portfolio
+# My Portfolio web application
 Single page application displaying my current works and bio
 
 ## What I will be using
