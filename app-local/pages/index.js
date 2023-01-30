@@ -1,4 +1,4 @@
-import { Box, Container, Heading, Button, Center, List, ListItem, AvatarBadge} from '@chakra-ui/react'
+import { Box, Container, Heading, Button, Center, List, ListItem, Avatar, Image, Wrap, WrapItem} from '@chakra-ui/react'
 import Title from '../components/title';
 import Paragraph from '../components/Paragraph';
 import BulletPoint from '../components/Bulletpoint';
@@ -12,22 +12,29 @@ const Page = () => {
     
     <Container maxW = "contianer.sm">
       <Box display={ {md:'flex'}}>
-        <Box flexGrow = {1}>
-          <Heading as = "h2" variant = "page-title" paddingTop="20px">
-              Kavi Dharmarajan
-          </Heading>
-          <p>
-            Data Nerd, Coffee enjoyer, Developer
-          </p>
-        </Box>
+        <Wrap spacing='50px'>
+          <WrapItem>
+          <Box flexGrow = {1}>
+            <Heading as = "h2" variant = "page-title" paddingTop="20px">
+                Kavi Dharmarajan
+            </Heading>
+            <p>
+              Data Nerd, Coffee enjoyer, Growing Engineer
+            </p>
+            <Box pt = "10px" borderRadius = 'lg' bg = '#ffffff40' p = {3} mb = {5} mt = {5} align = "center">
+            Hey!, I&apos;m Software Developer raised in Canada.
+            </Box>
+          </Box>
+          </WrapItem>
+          <WrapItem>
 
-
+            <Image alt='Kavi Dharmarajan' borderRadius='full' src='https://media.licdn.com/dms/image/C4E03AQFV0AizMu9V5Q/profile-displayphoto-shrink_200_200/0/1653927408171?e=1680739200&v=beta&t=PHUm-wvsTNjC3-WmwUsDpQQS45tWDA0HRxGjAcL8K7M'/>
+          </WrapItem>
+        </Wrap>
       </Box>
+
         <Box flexGrow={1}> 
           <Title> About </Title>
-          <Box pt = "10px" borderRadius = 'lg' bg = '#ffffff40' p = {3} mb = {5} mt = {5} align = "center">
-          Hello, I&apos;m Software Developer raised in Canada.
-          </Box>
           <Paragraph> I am a new graduate who enjoys tinkering with new and growing technologies,
             and overall loves to engineer or reverse engineer applications suited to help the current enconomy grow in a positive light.
           </Paragraph>
@@ -54,7 +61,7 @@ const Page = () => {
           <BulletPoint date="1999" > Raised in Canada </BulletPoint>
           <BulletPoint date="2010" > First experieence Drinking Coffee ☕</BulletPoint>
 
-          <BulletPoint date="2020" > Graduated from Carleton University with a Bachilors in Biomedical & Electrical Eng. </BulletPoint>
+          <BulletPoint date="2020" > Graduated from Carleton University with a in Biomedical & Electrical Eng. </BulletPoint>
           <BulletPoint date="2022" > Graduated from University of Waterloo with a Masters in Computer engineering </BulletPoint>
           <BulletPoint date="Current" > Seeking New opportunities as a Software Engineer/Dev </BulletPoint>
 

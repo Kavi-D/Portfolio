@@ -21,7 +21,7 @@ const LogoBox = styled.span`
 
 const Githublogo = () => {
   return (
-    <Link href="https://github.com/Kavi-D" scroll={false}>
+    <Link href="https://github.com/Kavi-D/Portfolio" scroll={false}>
       <a target = "_blank">
         <LogoBox>
           <AiFillGithub width={10}/> 
