@@ -97,7 +97,7 @@ const Page = () => {
             </ListItem> 
 
             <ListItem>
-                <Link href="https://www.linkedin.com/in/kavichandiran-dharmarajan-a1ab48203/">
+                <Link href="https://www.linkedin.com/in/kavi-dharmarajan-a1ab48203/">
                   <Button colorScheme = "messenger" variant='ghost' leftIcon={<AiTwotoneMail/>}>
                       <div> LinkedIn : https://www.linkedin.com/in/kavichandiran-dharmarajan-a1ab48203/</div>
                   </Button>
