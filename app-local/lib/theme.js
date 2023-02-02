@@ -29,6 +29,14 @@ const components = {
       color: mode('#3d7aed', '#ff63c3')(props),
       textUnderlineOffset: 3
     })
+  },
+  Modal: {
+    baseStyle: (props) => ({
+      dialog: {
+        maxWidth: ["65%", "65%", "65%"],
+        minWidth: "65%"
+      }
+    })
   }
 }
 

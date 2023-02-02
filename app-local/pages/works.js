@@ -6,6 +6,7 @@
 import { Box, Button, Image, useDisclosure } from "@chakra-ui/react";
 import {
     Modal,
+    extendTheme,
     ModalOverlay,
     ModalContent,
     ModalHeader,
@@ -13,6 +14,19 @@ import {
     ModalBody,
     ModalCloseButton,
   } from '@chakra-ui/react'
+const theme = extendTheme({
+components: {
+    Modal: {
+    baseStyle: (props) => ({
+        dialog: {
+        maxWidth: ["95%", "95%", "95%"],
+        minWidth: "95%",
+        bg: "#00ff00"
+        }
+    })
+    }
+}
+});
 const Works = () => {
     const {isOpen, onOpen, onClose } = useDisclosure()
 
@@ -23,8 +37,11 @@ const Works = () => {
             <Button mt={4} onClick={onOpen}>
                 Open Modal
             </Button>
-            <Modal size = 'full' isOpen={isOpen} onClose={onClose}>
-                <ModalOverlay />
+            <Modal  isOpen={isOpen} onClose={onClose}>
+            <ModalOverlay
+      bg='blackAlpha.300'
+      backdropFilter='blur(10px) hue-rotate(90deg)'
+    />
                 <ModalContent>
                 <ModalCloseButton />
                 <ModalHeader>Modal Title</ModalHeader>
