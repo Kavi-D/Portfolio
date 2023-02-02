@@ -5,34 +5,46 @@ import BulletPoint from '../components/Bulletpoint';
 import Link from 'next/link';
 import IconPlus from '../components/IconPlus';
 import { AiTwotoneMail } from "react-icons/ai"
+import SectionFrame from '../components/SectionFrame';
 
 const Page = () => {
   
   return (
     
     <Container maxW = "contianer.sm">
+      
       <Box display={ {md:'flex'}}>
         <Wrap spacing='50px'>
           <WrapItem>
           <Box flexGrow = {1}>
+            <SectionFrame delay={0.1}>
+
             <Heading as = "h2" variant = "page-title" paddingTop="20px">
                 Kavi Dharmarajan
             </Heading>
             <p>
               Data Nerd, Coffee enjoyer, Growing Engineer
             </p>
+            </SectionFrame>
+            <SectionFrame delay={0.2}>
+
             <Box pt = "10px" borderRadius = 'lg' bg = '#ffffff40' p = {3} mb = {5} mt = {5} align = "center">
             Hey!, I&apos;m Software Developer raised in Canada.
             </Box>
+            </SectionFrame>
           </Box>
           </WrapItem>
-          <WrapItem>
+          <SectionFrame delay={0.4}>
 
-            <Image alt='Kavi Dharmarajan' borderRadius='full' src='https://media.licdn.com/dms/image/C4E03AQFV0AizMu9V5Q/profile-displayphoto-shrink_200_200/0/1653927408171?e=1680739200&v=beta&t=PHUm-wvsTNjC3-WmwUsDpQQS45tWDA0HRxGjAcL8K7M'/>
-          </WrapItem>
+            <WrapItem>
+
+              <Image alt='Kavi Dharmarajan' borderRadius='full' src='https://media.licdn.com/dms/image/C4E03AQFV0AizMu9V5Q/profile-displayphoto-shrink_200_200/0/1653927408171?e=1680739200&v=beta&t=PHUm-wvsTNjC3-WmwUsDpQQS45tWDA0HRxGjAcL8K7M'/>
+            </WrapItem>
+          </SectionFrame>
         </Wrap>
       </Box>
-
+      
+      <SectionFrame delay={0.3}>
         <Box flexGrow={1}> 
           <Title> About </Title>
           <Paragraph> I am a new graduate who enjoys tinkering with new and growing technologies,
@@ -48,12 +60,14 @@ const Page = () => {
             Please click the link below (or above) if you would like to browse any of my works/projects
           </Paragraph>
         </Box>
-        <Center paddingTop = "15px">
-          <Box alignItems="baseline">
-            <Button colorScheme = "messenger" variant='outline' ><Link href='/works'>My works/Projects</Link></Button>
-          </Box>
-        </Center>
+      <Center paddingTop = "20px">
+        <Box alignItems="baseline">
+          <Button colorScheme = "messenger" variant='outline' ><Link href='/works'>My works/Projects</Link></Button>
+        </Box>
+      </Center>
+      </SectionFrame> 
 
+      <SectionFrame delay={0.6}>
 
         <Box paddingTop="10px" flexGrow={1}>
           <Title> Bio </Title>
@@ -68,6 +82,10 @@ const Page = () => {
 
 
         </Box>
+      </SectionFrame>
+
+      <SectionFrame delay={0.7}>
+      
         <Box paddingTop="10px" flexGrow={1}>
           <Title> Contact information </Title>
 
@@ -86,12 +104,13 @@ const Page = () => {
                 </Link>
             </ListItem>
 
-           
+            
 
           </List>
 
 
         </Box>
+      </SectionFrame> 
 
     </Container>
   )
