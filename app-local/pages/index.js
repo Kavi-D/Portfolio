@@ -56,15 +56,9 @@ const Page = () => {
 
           </Paragraph>
 
-          <Paragraph >
-            Please click the link below (or above) if you would like to browse any of my works/projects
-          </Paragraph>
+          
         </Box>
-      <Center paddingTop = "20px">
-        <Box alignItems="baseline">
-          <Button colorScheme = "messenger" variant='outline' ><Link href='/works'>My works/Projects</Link></Button>
-        </Box>
-      </Center>
+      
       </SectionFrame> 
 
       <SectionFrame delay={0.6}>
@@ -99,7 +93,7 @@ const Page = () => {
             <ListItem>
                 <Link href="https://www.linkedin.com/in/kavi-dharmarajan-a1ab48203/">
                   <Button colorScheme = "messenger" variant='ghost' leftIcon={<AiTwotoneMail/>}>
-                      <div> LinkedIn : https://www.linkedin.com/in/kavichandiran-dharmarajan-a1ab48203/</div>
+                      <div> LinkedIn : https://www.linkedin.com/kavi-dharmarajan</div>
                   </Button>
                 </Link>
             </ListItem>
