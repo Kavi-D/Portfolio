@@ -54,43 +54,43 @@ const Navbar  = (props) => {
     return (
         <Box position = "fixed" as="nav" w="100%" bg = {useColorModeValue('#ffffff40', '#20202380')}
         style = {{ backdropFilter: 'blur(10px)'}}>
-        <Container display = "flex" p = {2} maxW = "container.md" wrap = "wrap" algin = "center" justify="space-between">
-          <Flex align = "center" mr ={3}>
-            <Heading as = "h1" size = "lg" letterSpacing={'tighter'}>
-              <Logo/>
-            </Heading>
-          </Flex>
-          
-          <HStack spacing = "40px" direction={'column'}>
-            <Flex spacing = "20px">
-                <LinkLayout href="/" path = {path}>
-                About Me
-                </LinkLayout>
-                <LinkLayout href="/works" path = {path}>
-                  Projects/Works
-                </LinkLayout>
-
+          <Container display = "flex" p = {2} maxW = "container.md" wrap = "wrap" algin = "center" justify="space-between">
+            <Flex align = "center" mr ={3}>
+              <Heading as = "h1" size = "lg" letterSpacing={'tighter'}>
+                <Logo/>
+              </Heading>
             </Flex>
-                <Githublogo/>
-          </HStack>
-          <Box flex={1} align="right">
-            <ThemeToggleButton />
+            
+            <HStack spacing = "40px" direction={'column'}>
+              <Flex spacing = "20px">
+                  <LinkLayout href="/" path = {path}>
+                  About Me
+                  </LinkLayout>
+                  <LinkLayout href="/works" path = {path}>
+                    Projects/Works
+                  </LinkLayout>
 
-            <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-              <Menu isLazy id="navbar-menu">
-                <MenuButton
-                  as={IconButton}
-                  icon={<HamburgerIcon />}
-                  variant="outline"
-                  aria-label="Options"
-                />
-                <MenuList>
-                  
-                </MenuList>
-              </Menu>
+              </Flex>
+                  <Githublogo/>
+            </HStack>
+            <Box flex={1} align="right">
+              <ThemeToggleButton />
+
+              <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+                <Menu isLazy id="navbar-menu">
+                  <MenuButton
+                    as={IconButton}
+                    icon={<HamburgerIcon />}
+                    variant="outline"
+                    aria-label="Options"
+                  />
+                  <MenuList>
+                    
+                  </MenuList>
+                </Menu>
+              </Box>
             </Box>
-          </Box>
-        </Container>
+          </Container>
         </Box>
         
         
