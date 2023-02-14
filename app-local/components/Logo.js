@@ -21,7 +21,7 @@ const LogoBox = styled.span`
 
 const Logo = () => {
   return (
-    <Link href="https://www.linkedin.com/in/kavichandiran-dharmarajan-a1ab48203/" scroll={false}>
+    <Link href="https://www.linkedin.com/in/kavi-dharmarajan-a1ab48203/" scroll={false}>
       <a target = "_blank">
         <LogoBox>
           <AiFillLinkedin width={10}/>
