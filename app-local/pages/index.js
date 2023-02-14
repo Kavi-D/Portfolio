@@ -10,6 +10,7 @@ import {
   Image,
   Wrap,
   WrapItem,
+  useColorModeValue
 } from "@chakra-ui/react";
 import Title from "../components/title";
 import Paragraph from "../components/Paragraph";
@@ -117,7 +118,7 @@ const Page = () => {
           <List spacing={3}>
             <ListItem>
               <Button
-                colorScheme="messenger"
+                colorScheme={useColorModeValue('messenger', 'red')}
                 variant="ghost"
                 leftIcon={<AiTwotoneMail />}
               >
@@ -128,7 +129,7 @@ const Page = () => {
             <ListItem>
               <Link href="https://www.linkedin.com/in/kavi-dharmarajan-a1ab48203/">
                 <Button
-                  colorScheme="messenger"
+                  colorScheme={useColorModeValue('messenger', 'red')}
                   variant="ghost"
                   leftIcon={<AiTwotoneMail />}
                 >

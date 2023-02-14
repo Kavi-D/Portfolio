@@ -3,7 +3,7 @@
 //each card componenet will be have a picture and a little descirption
 //each card component- when clicked- will display a modal featuring descriptions
 //and any other useful information
-import { Box, Button, Image, useDisclosure, Container, Heading, Text} from "@chakra-ui/react";
+import { Box, Button, Image, useDisclosure, Container, Heading, Text, SimpleGrid, useColorModeValue} from "@chakra-ui/react";
 import {
   Modal,
   extendTheme,
@@ -34,7 +34,7 @@ const mystyle = {
     zIndex:'-1',
     right:'70%',
     left: '2%',
-    bottom: '250px'
+    bottom: '225px'
 
 }
 const Works = () => {
@@ -44,36 +44,32 @@ const Works = () => {
     <>
     <Image
         alt="Kavi Dharmarajan"
-        
+        boxSize='300px'
         src="/images/works/programImage.jpg"
         position="relative"
         zIndex={-1}  
         filter="blur(10px)"
+        width= '1000px'
+        
         
         />
         <Container maxW="contianer.sm" pt={1} centerContent>
 
         <div style={mystyle} >
-            <Heading color= 'tomato' as="sm"  size ="lg" position='relative'>
+            <Heading color= {useColorModeValue('#00b3b3', '#ff0066')} as="sm"  size ="xl" position='relative'>
                   Here is
             </Heading>
                 
         </div>
         <div style={mystyle} >
-            <Text color= 'tomato'  fontSize='35px' as="b" position='relative'>
-                  The list of the projects I have made
+            <Text color= {useColorModeValue('#00b3b3', '#ff0066')} fontSize='35px' as="b" position='relative'>
+                  The list of the projects I have worked on
             </Text>
                 
         </div>
         </Container>
         
-    <Image alt="other"
-    resizeMode='cover'
-    blurRadius={3}
-    position="relative"
-    zIndex={-1}
-    filter="blur(3px)"
-        src="/images/works/programImage.jpg"/>
+    
     <Container maxW="contianer.md" pt={14} centerContent>
       <div>this is works page needs more work, obviously</div>
       <Button mt={4} onClick={onOpen}>
