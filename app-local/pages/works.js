@@ -15,6 +15,11 @@ import {
   ModalCloseButton,
 } from "@chakra-ui/react";
 
+import { WorkGridItem } from "../components/workCard";
+import SectionFrame from "../components/SectionFrame";
+
+import thumbtest from '../public/images/works/programImage.jpg'
+
 import programmImage from '../public/images/works/programImage.jpg'
 const theme = extendTheme({
   components: {
@@ -48,26 +53,39 @@ const Works = () => {
         src="/images/works/programImage.jpg"
         position="relative"
         zIndex={-1}  
-        filter="blur(10px)"
+        filter="blur(8px)"
         width= '1000px'
-        
-        
         />
-        <Container maxW="contianer.sm" pt={1} centerContent>
+    <Container maxW="contianer.sm" pt={1} centerContent>
 
-        <div style={mystyle} >
-            <Heading color= {useColorModeValue('#00b3b3', '#ff0066')} as="sm"  size ="xl" position='relative'>
-                  Here is
-            </Heading>
-                
-        </div>
-        <div style={mystyle} >
-            <Text color= {useColorModeValue('#00b3b3', '#ff0066')} fontSize='35px' as="b" position='relative'>
-                  The list of the projects I have worked on
-            </Text>
-                
-        </div>
-        </Container>
+    <div style={mystyle} >
+        <Heading color= {useColorModeValue('#00b3b3', '#ff0066')} as="sm"  size ="xl" position='relative'>
+              Here is
+        </Heading>
+            
+    </div>
+    <div style={mystyle} >
+        <Text color= {useColorModeValue('#00b3b3', '#ff0066')} fontSize='35px' as="b" position='relative'>
+              The list of the projects I have worked on
+        </Text>
+            
+    </div>
+    </Container>
+
+    <SimpleGrid columns  = {[1,1,2]} gap={6}>
+      <WorkGridItem id="keystroke" title="keystroke" thumbnail={thumbtest}>
+        A small website I worked on at my internship
+      </WorkGridItem>
+
+      
+      <WorkGridItem id="RDPA" title="Radiation Does Prediction Algorithm" thumbnail={thumbtest}>
+        Data analysis, Machine learning, software Development
+      </WorkGridItem>
+      <WorkGridItem id="FEMA" title="Flood Isurance Estimator" thumbnail={thumbtest}>
+        A small backend heavy application I worked on
+      </WorkGridItem>
+      
+    </SimpleGrid>
         
     
     <Container maxW="contianer.md" pt={14} centerContent>
