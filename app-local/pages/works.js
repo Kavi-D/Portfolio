@@ -82,7 +82,7 @@ const Works = () => {
         Data analysis, Machine learning, software Development
       </WorkGridItem>
       <WorkGridItem id="FEMA" title="Flood Isurance Estimator" thumbnail={thumbtest}>
-        A small backend heavy application I worked on
+        A small backend heavy application made for FEMA staff members
       </WorkGridItem>
       
     </SimpleGrid>
