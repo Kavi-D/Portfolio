@@ -21,27 +21,39 @@ import Paragraph from "../../components/Paragraph";
 
     <Container  maxW="contianer.md" pt={14} >
         <Text>
-            <Link color='teal.500' href='/works'>
+            <Link color='pink.500' href='/works'>
             {'<-'}{' '}Back to Works
             </Link>
         </Text>
         
         <Title>KeyStroke (2022) </Title>
 
-        <Text> Live Site Link:    
+        <Text> Website:    
             <Link color='pink.500' href='https://keystrokeapp.com/' isExternal>
            {"   "} https://keystrokeapp.com/
             </Link>
         </Text>
         <Paragraph>
             {" "}
-            A Q&A social media platform used that has a linkedin/facebook style
+            {"A Q&A social media platform I worked on while hired by Keystroke team in 2022.\n"}
+            A large portion of the functionality of the site and design was done by me  
+        </Paragraph>
+
+        <Paragraph>
+            {" "}
+            <Link as= 'u' color='pink.300'>
+            Tech Stack used: 
+            </Link>
+            {" "}MongoDB, Express, React, Node, and Meteor.js with Jenkins and Bitbucket for version 
+            control and CI/CD.
         </Paragraph>
 
         {/* FOR CHAKRA UI, NEED IMAGE JUST IN THE PUBLIC FOLDER, CHAKRA WILL NOT GO INTO ANY OTHER FOLDER ON ITS OWN TO WORK
          or you could do what I did below and it will repferene the image itself, make sure you have the slash at the very front */}
-        <Image  borderRadius="xl" w="full" src = "/images/works/programImage.jpg" alt = 'first keystroke pic'/>
-        <Image  borderRadius="xl" w="full" src = "/images/works/1111.PNG" alt = 'otherlife'/>
+        <Image  paddingTop="15px" borderRadius="xl" w="full" src = "/images/works/keystroke/keystroke1.PNG" alt = 'first keystroke pic'/>
+        <Image paddingTop="15px" borderRadius="xl" w="full" src = "/images/works//keystroke/keystroke2.PNG" alt = 'Register keystroke pic'/>
+        <Image paddingTop="15px" borderRadius="xl" w="full" src = "/images/works//keystroke/keystroke3.PNG" alt = 'feed keystroke pic'/>
+
 
 
     </Container>

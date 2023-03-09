@@ -19,7 +19,8 @@ import { WorkGridItem } from "../components/workCard";
 import SectionFrame from "../components/SectionFrame";
 
 import thumbtest from '../public/images/works/programImage.jpg'
-
+import keystrokethumb from '../public/images/works/keystrokelogo.jpg'
+import RDPAthumb from '../public/images/works/RDPA/RDPA2.jpg'
 import programmImage from '../public/images/works/programImage.jpg'
 const theme = extendTheme({
   components: {
@@ -73,12 +74,12 @@ const Works = () => {
     </Container>
 
     <SimpleGrid columns  = {[1,1,2]} gap={6}>
-      <WorkGridItem id="keystroke" title="keystroke" thumbnail={thumbtest}>
+      <WorkGridItem id="keystroke" title="keystroke" thumbnail={keystrokethumb}>
         A small website I worked on at my internship
       </WorkGridItem>
 
       
-      <WorkGridItem id="RDPA" title="Radiation Does Prediction Algorithm" thumbnail={thumbtest}>
+      <WorkGridItem id="RDPA" title="Radiation Does Prediction Algorithm" thumbnail={RDPAthumb}>
         Data analysis, Machine learning, software Development
       </WorkGridItem>
       <WorkGridItem id="FEMA" title="Flood Isurance Estimator" thumbnail={thumbtest}>
