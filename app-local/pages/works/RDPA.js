@@ -1,7 +1,13 @@
+import { chakra } from "@chakra-ui/react"
+import { Text, Link } from "@chakra-ui/react"
 const RDPA = () => {
 
     return (
-        <div> THIS IS THE DOES PREDICTION ALGORITHM PAGE</div>
+        <Text>
+            <Link color='teal.500' href='/works'>
+            {'<-'}{' '}Back to Works
+            </Link>
+        </Text>
     )
 }
 

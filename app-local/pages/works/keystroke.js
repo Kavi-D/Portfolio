@@ -51,8 +51,8 @@ import Paragraph from "../../components/Paragraph";
         {/* FOR CHAKRA UI, NEED IMAGE JUST IN THE PUBLIC FOLDER, CHAKRA WILL NOT GO INTO ANY OTHER FOLDER ON ITS OWN TO WORK
          or you could do what I did below and it will repferene the image itself, make sure you have the slash at the very front */}
         <Image  paddingTop="15px" borderRadius="xl" w="full" src = "/images/works/keystroke/keystroke1.PNG" alt = 'first keystroke pic'/>
-        <Image paddingTop="15px" borderRadius="xl" w="full" src = "/images/works//keystroke/keystroke2.PNG" alt = 'Register keystroke pic'/>
-        <Image paddingTop="15px" borderRadius="xl" w="full" src = "/images/works//keystroke/keystroke3.PNG" alt = 'feed keystroke pic'/>
+        <Image paddingTop="15px" borderRadius="xl" w="full" src = "/images/works/keystroke/keystroke2.PNG" alt = 'Register keystroke pic'/>
+        <Image paddingTop="15px" borderRadius="xl" w="full" src = "/images/works/keystroke/keystroke3.PNG" alt = 'feed keystroke pic'/>
 
 
 

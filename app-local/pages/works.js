@@ -74,15 +74,15 @@ const Works = () => {
     </Container>
 
     <SimpleGrid columns  = {[1,1,2]} gap={6}>
-      <WorkGridItem id="keystroke" title="keystroke" thumbnail={keystrokethumb}>
+      <WorkGridItem id="keystroke" title="keystroke" thumbnail={"/images/works/keystrokelogo.jpg"}>
         A small website I worked on at my internship
       </WorkGridItem>
 
       
-      <WorkGridItem id="RDPA" title="Radiation Does Prediction Algorithm" thumbnail={RDPAthumb}>
+      <WorkGridItem id="RDPA" title="Radiation Does Prediction Algorithm" thumbnail={"/images/works/RDPA/RDPA2.jpg"}>
         Data analysis, Machine learning, software Development
       </WorkGridItem>
-      <WorkGridItem id="FEMA" title="Flood Isurance Estimator" thumbnail={thumbtest}>
+      <WorkGridItem id="FEMA" title="Flood Isurance Estimator" thumbnail={"/images/works/programImage.jpg"}>
         A small backend heavy application made for FEMA staff members
       </WorkGridItem>
       
