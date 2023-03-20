@@ -24,10 +24,10 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
       /></LinkOverlay>
         </NextLink>
      
-        <Text mt={2} fontSize={20}>
+        <Text mt={2} fontSize={20} zIndex={-1} position="relative">
           {title}
         </Text>
-        <Text fontSize={14}>{children}</Text>
+        <Text fontSize={14} zIndex={-1} position="relative">{children}</Text>
       </LinkBox>
     </Box>
   )

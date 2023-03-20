@@ -22,6 +22,7 @@ import thumbtest from '../public/images/works/programImage.jpg'
 import keystrokethumb from '../public/images/works/keystrokelogo.jpg'
 import RDPAthumb from '../public/images/works/RDPA/RDPA2.jpg'
 import programmImage from '../public/images/works/programImage.jpg'
+import  Title  from "../components/title"
 const theme = extendTheme({
   components: {
     Modal: {
@@ -59,20 +60,21 @@ const Works = () => {
         />
     <Container maxW="contianer.sm" pt={1} centerContent>
 
-    <div style={mystyle} >
-        <Heading color= {useColorModeValue('#00b3b3', '#ff0066')} as="sm"  size ="xl" position='relative'>
-              Here is
-        </Heading>
-            
-    </div>
-    <div style={mystyle} >
-        <Text color= {useColorModeValue('#00b3b3', '#ff0066')} fontSize='35px' as="b" position='relative'>
-              The list of the projects I have worked on
-        </Text>
-            
-    </div>
+      <div style={mystyle} >
+          <Heading color= {useColorModeValue('#00b3b3', '#ff0066')} as="sm"  size ="xl" position='relative'>
+                Here is
+          </Heading>
+              
+      </div>
+      <div style={mystyle} >
+          <Text color= {useColorModeValue('#00b3b3', '#ff0066')} fontSize='35px' as="b" position='relative'>
+                The list of the projects I have worked on
+          </Text>
+              
+      </div>
     </Container>
-
+    
+    <Title> Large scale projects </Title>
     <SimpleGrid columns  = {[1,1,2]} gap={6}>
       <WorkGridItem id="keystroke" title="keystroke" thumbnail={"/images/works/keystrokelogo.jpg"}>
         A small website I worked on at my internship
@@ -87,6 +89,10 @@ const Works = () => {
       </WorkGridItem>
       
     </SimpleGrid>
+
+
+    <Title> small projects  </Title>
+
         
     
     <Container maxW="contianer.md" pt={14} centerContent>
