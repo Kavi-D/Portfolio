@@ -11,7 +11,7 @@ const RDPA = () => {
         <Container  maxW="contianer.md" pt={14} >
 
             <Text>
-                <Link color='teal.500' href='/works'>
+                <Link color='pink.500' href='/works'>
                 {'<-'}{' '}Back to Works
                 </Link>
             </Text>

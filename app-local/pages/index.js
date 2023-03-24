@@ -55,7 +55,7 @@ const Page = () => {
               <Image
                 alt="Kavi Dharmarajan"
                 borderRadius="full"
-                src="https://media.licdn.com/dms/image/C4E03AQFV0AizMu9V5Q/profile-displayphoto-shrink_200_200/0/1653927408171?e=1680739200&v=beta&t=PHUm-wvsTNjC3-WmwUsDpQQS45tWDA0HRxGjAcL8K7M"
+                src="images/mainpage/ppic.jpg"
               />
             </WrapItem>
           </SectionFrame>
