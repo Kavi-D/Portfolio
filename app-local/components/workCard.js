@@ -16,6 +16,7 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
         src={thumbnail}
         alt={title}
         className="grid-item-thumbnail"
+        borderRadius='20%'
         
         zIndex={-1}  
         position="relative"
