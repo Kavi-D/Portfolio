@@ -1,4 +1,4 @@
-import { chakra, Text, Link, Container } from "@chakra-ui/react"
+import { chakra, Text, Link, Container, Image } from "@chakra-ui/react"
 import Title from "../../components/title"
 import Paragraph from "../../components/Paragraph"
 
@@ -33,8 +33,20 @@ const FEMA = () => {
                         {"   "} React, HTML, CSS for basic frontend, 
                     </Link>
                     <Link color='pink.500' isExternal>
-                        {"   "} MySQL for backend 
+                        {"   "} MySQL, Node.js and Express for server side performance
                     </Link>
+                    <Link color='pink.500' isExternal>
+                        {"   "} and jest and Puppeteer for unit and end-to-end testing
+                    </Link>
+
+
+            <Image paddingTop="15px" borderRadius="xl" w="full" src = "/images/works/FEMA/FEMATECHSTACK.JPG" alt = 'fema tech stack'/>
+            <Image paddingTop="15px" borderRadius="xl" w="full" src = "/images/works/FEMA/FEMAFORMpic.PNG" alt = 'fema tech stack'/>
+            <Image paddingTop="15px" borderRadius="xl" w="full" src = "/images/works/FEMA/FEMAcreateRecordForm.PNG" alt = 'fema tech stack'/>
+            <Image paddingTop="15px" borderRadius="xl" w="full" src = "/images/works/FEMA/FEMApolicySearchID.PNG" alt = 'fema tech stack'/>
+            
+
+
 
                 </Text>
             </Paragraph>
