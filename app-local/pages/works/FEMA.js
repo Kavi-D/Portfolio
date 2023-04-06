@@ -38,17 +38,32 @@ const FEMA = () => {
                     <Link color='pink.500' isExternal>
                         {"   "} and jest and Puppeteer for unit and end-to-end testing
                     </Link>
+                </Text>
 
 
             <Image paddingTop="15px" borderRadius="xl" w="full" src = "/images/works/FEMA/FEMATECHSTACK.JPG" alt = 'fema tech stack'/>
+
+            <Paragraph>
+                    The site used a simple form input system where users who created an account would log in and fill out appropriate information
+                    of their living situation with their building/buildings
+            </Paragraph>
             <Image paddingTop="15px" borderRadius="xl" w="full" src = "/images/works/FEMA/FEMAFORMpic.PNG" alt = 'fema tech stack'/>
             <Image paddingTop="15px" borderRadius="xl" w="full" src = "/images/works/FEMA/FEMAcreateRecordForm.PNG" alt = 'fema tech stack'/>
+            <Paragraph>
+                    The input the user was given is then processed by our system to forma a dynamic query upon the user specifications
+                    and then fetches and averages the information from our local SQL database to present a regular average of what costs they might see.
+            </Paragraph>
+            <Image paddingTop="15px" borderRadius="xl" w="full" src = "/images/works/FEMA/FEMApicAVG2.PNG" alt = 'fema tech stack'/>
+            <Paragraph>
+                    Additionally if the user read the cost analysis and wanted to revisit the search without having to re-enter the form, they could search their 
+                    account via a policy ID that is randomly generated per user request.
+            </Paragraph>
             <Image paddingTop="15px" borderRadius="xl" w="full" src = "/images/works/FEMA/FEMApolicySearchID.PNG" alt = 'fema tech stack'/>
             
 
 
 
-                </Text>
+                
             </Paragraph>
             </Text>
         </Container>
