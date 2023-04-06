@@ -1,7 +1,7 @@
 import { chakra, Text, Link, Container, Image } from "@chakra-ui/react"
 import Title from "../../components/title"
 import Paragraph from "../../components/Paragraph"
-
+//import ERdiagram from "../../public/documents/FEMA_ECE656Project.pdf"
 const FEMA = () => { 
     return (
 
@@ -39,7 +39,12 @@ const FEMA = () => {
                         {"   "} and jest and Puppeteer for unit and end-to-end testing
                     </Link>
                 </Text>
-
+                <Text color= 'pink.200'>
+                    DataBase schema layout Via ER_diagram: 
+                    <Link color='pink.500' href= "https://git.uwaterloo.ca/jpmascar/ece656_project_group2/-/blob/master/ERDiagram/FEMA_ECE656Project.pdf" isExternal>
+                        {"   "} ER_Diagram.pdf 
+                    </Link>
+                </Text>
 
             <Image paddingTop="15px" borderRadius="xl" w="full" src = "/images/works/FEMA/FEMATECHSTACK.JPG" alt = 'fema tech stack'/>
 
@@ -60,7 +65,6 @@ const FEMA = () => {
             </Paragraph>
             <Image paddingTop="15px" borderRadius="xl" w="full" src = "/images/works/FEMA/FEMApolicySearchID.PNG" alt = 'fema tech stack'/>
             
-
 
 
                 
