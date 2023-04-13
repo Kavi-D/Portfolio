@@ -12,17 +12,20 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
       <LinkBox 
         href={`/works/${id}`}>
         <NextLink href={`/works/${id}`} passHref>
-          <LinkOverlay><Image
-        src={thumbnail}
-        alt={title}
-        className="grid-item-thumbnail"
-        borderRadius='20%'
-        
-        zIndex={-1}  
-        position="relative"
-        width = '500px'
-        height = '280px'
-      /></LinkOverlay>
+          <LinkOverlay>
+              <Image
+            src={thumbnail}
+            alt={title}
+            className="grid-item-thumbnail"
+            borderRadius='20%'
+            paddingBottom='10px'
+            zIndex={-1}  
+            position="relative"
+            width = '400px'
+            height = '280px'
+            />
+        </LinkOverlay>
+          
         </NextLink>
      
         <Text mt={2} fontSize={20} zIndex={-1} position="relative">

@@ -84,21 +84,27 @@ const Works = () => {
       <WorkGridItem id="RDPA" title="Radiation Does Prediction Algorithm" thumbnail={"/images/works/RDPA/RDPA2.jpg"}>
         Data analysis, Machine learning, software Development
       </WorkGridItem>
-      <WorkGridItem id="FEMA" title="Flood Isurance Estimator" thumbnail={"/images/works/programImage.jpg"}>
-        A small backend heavy application I made for FEMA
+      <WorkGridItem id="FEMA" title="Flood Isurance Estimator" thumbnail={"/images/works/FEMA/FEMA_thumb.png"}>
+        A backend heavy application I made for FEMA staff
+      </WorkGridItem>
+      <WorkGridItem id="SV2TTS" title="SV2TTS Fuzzer" thumbnail={"/images/works/SV2TTS/TTS2.png"}>
+        A fuzzer made to test todays TTS audio systems
+      </WorkGridItem>
+
+      <WorkGridItem id="RMDRobot" title="Leader/Follower robotics experiment" thumbnail={"/images/works/programImage.jpg"}>
+        A Simuation I made using python to test multi robot delivery systems
       </WorkGridItem>
       
     </SimpleGrid>
 
 
-    <Title> small projects  </Title>
 
         
     
     <Container maxW="contianer.md" pt={14} centerContent>
-      <div>this is works page needs more work, obviously</div>
+      <div>If you would like to send me a message directly, click the link below</div>
       <Button mt={4} onClick={onOpen}>
-        Open Modal
+        Click here to send me a message
       </Button>
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay
