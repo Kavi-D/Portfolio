@@ -55,6 +55,7 @@ const Works = () => {
         src="/images/works/programImage.jpg"
         position="relative"
         zIndex={-1}  
+        borderRadius ='10%'
         filter="blur(8px)"
         width= '1000px'
         />
@@ -74,7 +75,7 @@ const Works = () => {
       </div>
     </Container>
     
-    <Title> Large scale projects </Title>
+    <Title> Main Projects </Title>
     <SimpleGrid columns  = {[1,1,2]} gap={6}>
       <WorkGridItem id="keystroke" title="keystroke" thumbnail={"/images/works/keystrokelogo.jpg"}>
         A small website I worked on at my internship
