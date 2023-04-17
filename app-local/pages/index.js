@@ -78,7 +78,7 @@ const Page = () => {
             and to web development, such as this portfolio website! I am open to
             learning and discovering new things, since my goal is to provide
             some level of engineering that can help the world in one way or
-            another 🙃.
+            another.
           </Paragraph>
 
 
