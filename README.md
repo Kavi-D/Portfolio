@@ -8,7 +8,6 @@ Single page application displaying my current works and bio
 - Want to keep the design simple and readable, might have to use google api for font styling 
 
 ## Deploying the project
-- this portion of the project is unkown, need to look into it further
-- some ideas for this portfolio include heroku, Github Pages, Google Cloud Hosting...
+- Current deployment of the website is done via Vercel mainly due to cost and no other options for proper free hosting
 - 
 
