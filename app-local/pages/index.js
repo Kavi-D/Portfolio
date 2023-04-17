@@ -43,7 +43,7 @@ const Page = () => {
                   mt={5}
                   align="center"
                 >
-                  Hey!, I&apos;m Software Developer raised in Canada.
+                  Hey! I&apos;m Software Developer raised in Canada.
                 </Box>
               </SectionFrame>
             </Box>
@@ -74,46 +74,57 @@ const Page = () => {
           </Paragraph>
           <Paragraph>
             {" "}
-            I have worked on several projects in my past that range between,
-            high level machine learning, database design and optimization ,to
-            web development such as this portfolio website. I am open to
+            I have worked on several projects in my past that range from high level machine learning, to database design/optimization, 
+            and to web development, such as this portfolio website! I am open to
             learning and discovering new things, since my goal is to provide
             some level of engineering that can help the world in one way or
             another 🙃.
           </Paragraph>
+
+
+
+        </Box>
+      </SectionFrame>
+
+      <SectionFrame delay={0.3}>
+        <Box flexGrow={1}>
+          <Title> What I am currently working with </Title>
+
+          <Paragraph> {" "}talk about what you work on atm and what (eg. I work on dynamic projects)</Paragraph>
+
         </Box>
       </SectionFrame>
 
       <SectionFrame delay={0.6}>
         <Box paddingTop="10px" flexGrow={1}>
-          <Title> Bio </Title>
+          <Title> Biography </Title>
           <BulletPoint date="1997"> Born in Africa </BulletPoint>
           <BulletPoint date="1999"> Raised in Canada </BulletPoint>
           <BulletPoint date="2010">
             {" "}
-            First experieence Drinking Coffee ☕
+            First experience Drinking Coffee ☕
           </BulletPoint>
 
           <BulletPoint date="2020">
             {" "}
-            Graduated from Carleton University with a in Biomedical & Electrical
+            Graduated from Carleton University with a bachelors in Biomedical & Electrical
             Eng.{" "}
           </BulletPoint>
           <BulletPoint date="2022">
             {" "}
-            Graduated from University of Waterloo with a Masters in Computer
+            Graduated from University of Waterloo with a Master{"'"}s in Computer
             engineering{" "}
           </BulletPoint>
           <BulletPoint date="Current">
             {" "}
-            Seeking New opportunities as a Software Engineer/Dev{" "}
+            Seeking new opportunities as a Software Engineer/Dev{" "}
           </BulletPoint>
         </Box>
       </SectionFrame>
 
       <SectionFrame delay={0.7}>
         <Box paddingTop="10px" flexGrow={1}>
-          <Title> Contact information </Title>
+          <Title> Contact Information </Title>
 
           <List spacing={3}>
             <ListItem>
@@ -127,7 +138,7 @@ const Page = () => {
             </ListItem>
 
             <ListItem>
-              <Link href="https://www.linkedin.com/in/kavi-dharmarajan-a1ab48203/">
+              <Link href="https://www.linkedin.com/in/kavi-dharmarajan-a1ab48203/" isExternal>
                 <Button
                   colorScheme={useColorModeValue('messenger', 'red')}
                   variant="ghost"

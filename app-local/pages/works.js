@@ -78,18 +78,18 @@ const Works = () => {
     <Title> Main Projects </Title>
     <SimpleGrid columns  = {[1,1,2]} gap={6}>
       <WorkGridItem id="keystroke" title="keystroke" thumbnail={"/images/works/keystrokelogo.jpg"}>
-        A small website I worked on at my internship
+        A  website I worked on at my internship
       </WorkGridItem>
 
       
       <WorkGridItem id="RDPA" title="Radiation Does Prediction Algorithm" thumbnail={"/images/works/RDPA/RDPA2.jpg"}>
         Data analysis, Machine learning, software Development
       </WorkGridItem>
-      <WorkGridItem id="FEMA" title="Flood Isurance Estimator" thumbnail={"/images/works/FEMA/FEMA_thumb.png"}>
+      <WorkGridItem id="FEMA" title="Flood Insurance Estimator" thumbnail={"/images/works/FEMA/FEMA_thumb.png"}>
         A backend heavy application I made for FEMA staff
       </WorkGridItem>
       <WorkGridItem id="SV2TTS" title="SV2TTS Fuzzer" thumbnail={"/images/works/SV2TTS/TTS2.png"}>
-        A fuzzer made to test todays TTS audio systems
+        A fuzzer made to test today{"'"}s TTS audio systems
       </WorkGridItem>
 
       <WorkGridItem id="RMDRobot" title="Leader/Follower robotics experiment" thumbnail={"/images/works/programImage.jpg"}>
