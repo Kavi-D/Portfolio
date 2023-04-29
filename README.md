@@ -9,5 +9,5 @@ Single page application displaying my current works and bio
 
 ## Deploying the project
 - Current deployment of the website is done via Vercel mainly due to cost and no other options for proper free hosting
-- 
+- The url for this website is temporary, but provides a way to access the site: https://portfolio-tau-liard-99.vercel.app/
 
