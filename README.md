@@ -2,7 +2,7 @@
 Single page application displaying my current works and bio
 
 ## What I used (Frameworks and Libraries)
-- main language will be javascript with react as the framework
+- main language will be javascript with react as the framework for interface design
 - Nextjs will be used for single page routing and appropriate SSR design
 - Chose chakra UI for font, design/styling and three.js to learn simple animations
 - Want to keep the design simple and readable to just display my projects and socials
